@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    background: #0b0b0b;
+}
+
+section {
+    margin: .5vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+
+section div {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+}
+
+section div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+section {
+    padding-top: 100px;
+}
+
+
+@media screen and (max-width: 420px) {
+    section div {
+        margin: 5px;
+    }
+    section {
+        padding: 5px;
+    }
+
+    section {
+        padding-top: 100px;
+    }
+}
+
+/*hover for animations*/
+
+.effect1 {
+    /* transition: transform 0.5s ease-in-out; */
+    transition: all 0.5s ease-in-out;
+}
+
+.effect1:hover {
+    -webkit-transform: (0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.effect2 {
+    transition: all 2s ease-in-out;
+}
+
+.effect2:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay .link {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #111;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay:hover .link {
+    opacity: 0.8;
+}
+
+
+.overlayIcon {
+    position: relative;
+}
+
+.overlayIcon .link {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlayIcon:hover .link {
+    opacity: 0.7;
+}
+
+.icon {
+    display: block;
+    top: 25%;
+    left: 45%;
+    position: relative;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.effect5 {
+    overflow: hidden;
+}
+
+.effect5 img {
+    transition: all 1s ease-in-out;
+}
+
+.effect5:hover img {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+}
+
+.effect6 {
+    overflow: hidden;
+}
+
+.effect6 img {
+    transition: all 1s ease-in-out;
+}
+
+.effect6:hover img {
+    transform: scale(1.2) rotate(-5deg);
+    transform: scale(1.2) rotate(-5deg);
+    transform: scale(1.2) rotate(-5deg);
+}
+
+
+/*footer*/
+
+.socials{
+    width: 100%;
+    text-align: center;
+    background-color: #292929;
+}
+
+.socialdivs {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.fb {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.fb:hover {
+    background-color: #4668b3;
+}
+
+.insta {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.insta:hover {
+    background-image: linear-gradient(#dc4262, #8e36ae);
+}
+
+.linkedin {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.linkedin:hover {
+    background-color: #3095d3;
+}
+
+.git {
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.git:hover {
+    background-color: #111;
+}
+
+footer {
+    background-color: #222222;
+    margin-top: 50px;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-linkedin,
+.fa-github {
+    font-size: 50px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 155px;
+}
